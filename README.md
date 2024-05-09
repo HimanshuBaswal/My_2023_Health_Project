@@ -1,3 +1,4 @@
+
 # My Health Project
 
 ## The Mission:
@@ -19,43 +20,55 @@ The project utilizes personal health data logged daily, covering steps, sleep pa
 | Tool | Usage |
 | ------ | ------ |
 | Tableau | Employed for visualizing data and creating interactive dashboards |
-| Miro | Used for wireframing and designing dashboard layouts |
-| Excel | Utilized for data management and preliminary analysis |
+| Miro | Used for dashboard layout planning, information architecture, metric selection, documentation & Notes. |
+| Excel | Utilized for data management and preliminary analysis | 
 
 ## Dashboard Design:
-The project comprises four main dashboards:
-- Sleep Insights: Focuses on sleep patterns and quality metrics.
-- Steps Tracker: Displays daily step count and related statistics.
-- Workout Analysis: Highlights workout sessions, intensity levels, and calorie expenditure.
-- Overall Health Score: Provides an aggregated view of health metrics and trends.
+The project comprises of four main dashboards:
+- **Sleep Insights**: Focuses on sleep patterns and quality metrics.
+	- The Sleep Tracking data focuses mainly on my sleeping behaviour. I utilized descriptive statistics to answer simple questions like *What is everyday average sleep like?, What does my sleep on weekends and weekends look like?, How does my sleep vary over the days?* and more such questions all with the use of graphs and visualization.
+
+- **Steps Insights**: Displays daily step count and related statistics.
+	- The Steps Tracking data focuses on analytics of my movement. I ask questions like *How much do I walk everyday?, What does that look like in hours?, When was my step score the best throughout the week?*, all of these through simply charts and KPI's.
+
+- **Workout Analysis**: Highlights workout sessions, intensity levels, and calorie expenditure.
+	- The Workout Data is a look at my workout stats. Fields like Workout duration, Heart Rate levels are used here. I ask questions like *What is avg workout duration?, What are my weekday and weekend workouts like?, How do my metrics change on weekend compared to weekday?*
+
+- **Overall Health Score**: Provides an aggregated view of health metrics and trends.
+	- This dashboard would be the main design which explains the Why? What? and How? of the dashboard. *A KPI view of all the created metrics, filter by month view, Calendar view, What does my average day look like.* This page would serve as a link to all others.
 
 ## Methodology:
-### _Approach:_
-- Overall Health Score Calculation: Aggregating key metrics to derive an overall health score.
-- Sleep Insights: Analyzing sleep duration, quality, and patterns.
-- Steps Tracker: Monitoring daily step count and streaks.
-- Workout Analysis: Assessing workout intensity, duration, and calorie burn.
-
-### _Tool Utilization:_
-
-- **Miro** - Used for dashboard layout planning, information architecture, metric selection, documentation & Notes.
-- **Tableau** - Employed for creating interactive visualizations and dashboards.
-
 ### _Key Metrics:_
-- Overall Health Score: Comprising metrics like Intensity Balance Ratio, Workout Efficiency, and Wellness Hours.
-- Heart Rate Score: Evaluating heart rate trends and resting heart rate levels.
-- Sleep Quality Metrics: Including Weekend vs. Weekday sleep patterns and Sleep Score analysis.
-- Step Tracking Metrics: Incorporating Streak and Step Score for monitoring progress.
-- Workout Performance Metrics: Covering Workout Score, Intensity Balance Ratio, and Caloric Expenditure.
+- **Overall Health Score**: Comprising metrics like Intensity Balance Ratio, Workout Efficiency, and Wellness Hours.
+	- Intensity Balance Ratio, Workout Efficiency Ratio, Wellness Hours, Overall Health Score, Avg Day Text, Month Name, Weekday, 1steps average, 2hours average, 3calories average, Total Calories Burned
+	
+- **Heart Rate Metrics**: Evaluating heart rate trends and resting heart rate levels.
+	- Heart Rate Score
+	
+- **Sleep Quality Metrics**: Including Weekend vs. Weekday sleep patterns and Sleep Score analysis.
+	- Total Hours Slept
+	
+- **Step Tracking Metrics**: Incorporating Streak and Step Score for monitoring progress.
+	- Hours Walked, Step Score, Streak
+	
+- **Workout Performance Metrics**: Covering Workout Score, Intensity Balance Ratio, and Caloric Expenditure.
+	- Intensity Balance Ratio, Low Intensity Ratio, *Workout Metric Parameter*, Workout Score, Workout Norm
 
-## Insights and Takeaways:
+### _Approach:_
+- **Overall Health Score Calculation**: Aggregating key metrics to derive an overall health score.
+- **Sleep Insights**: Analyzing sleep duration, quality, and patterns.
+- **Steps Tracker**: Monitoring daily step count and streaks.
+- **Workout Analysis**: Assessing workout intensity, duration, and calorie burn.
+
+
+## Insights and Takeaways: (Post Completion)
 ### _Dashboard Highlights:_
-- Overall Health Score Trends: Tracking improvements or declines in overall health metrics.
-- Steps and Sleep Patterns: Identifying correlations between step count and sleep quality.
-- Workout Intensity Analysis: Assessing the impact of workout duration and intensity on overall health.
+- **Overall Health Score Trends**: Tracking improvements or declines in overall health metrics.
+- **Steps and Sleep Patterns**: Identifying correlations between step count and sleep quality.
+- **Workout Intensity Analysis**: Assessing the impact of workout duration and intensity on overall health.
 
 ## Conclusion:
 Consideration of Scatter plot visualization showcasing Workout Duration vs. Parameters (Score, calories, Heart Rate levels) for deeper insights. Also, analyze variations in health metrics between weekends and weekdays.
 
-[![N|Miro](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxw8FakALOwikyJ6z2eIoYp3Cf7EPKpGRT6L4Pv15oaQ&s)](https://miro.com/index/)
-[![N|Tableau](https://cdn.iconscout.com/icon/free/png-256/free-tableau-5376638-4489898.png?f=webp)](https://www.tableau.com/) 
+
+[![N|Tableau](https://cdn.iconscout.com/icon/free/png-256/free-tableau-5376638-4489898.png?f=webp)](https://www.tableau.com/) [![N|Miro](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxw8FakALOwikyJ6z2eIoYp3Cf7EPKpGRT6L4Pv15oaQ&s)](https://miro.com/index/)
