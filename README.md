@@ -120,16 +120,44 @@ This is what your fields in tableau will look like:
 
 ### _Approach:_
 - **Overall Health Score Calculation**: Aggregating key metrics to derive an overall health score.
-
+	- KPI's View - High Intensity Balance Ratio, Workout Efficiency Ratio, Wellness Hours, Overall Health Score
+	- Month Action Filter
+   	- Calendar View 
+   	- What does an Average day look like?
   
 - **Sleep Insights**: Analyzing sleep duration, quality, and patterns.
-	
+	- How much do I sleep on average everyday?
+   	- How much of that is light sleep?
+   	- How much of that is deep sleep?
+  	- What is my Best Sleep score?
+  	- What is my Worst Sleep score?
+  	- Weekends vs Weekday: Total Sleep, Deep Sleep, Light Sleep on Weekends vs Weekdays
+   	- How does my sleep score vary over different days of the week?
+   	- Is there a correlation between the duration of deep sleep and the sleep score?
+   	- How does the average duration of total sleep change over the course of a month?
+   	- Month Action Filter
 
 - **Steps Tracker**: Monitoring daily step count and streaks.
-
+	- How much do I walk on average everyday?
+  	- How many kilometer's is that?
+  	- How much time do I spent walking?
+  	- What does that time look like in hours?
+  	- What amount of calories do I burn everyday?
+  	- What is my highest steps?
+  	- What is my lowest steps?
+  	- How long was my biggest streak of hitting 12K steps?
+  	- On average, what day of the week was my step score the best?
+  	- Month Action Filter
 
 - **Workout Analysis**: Assessing workout intensity, duration, and calorie burn.
-
+  	- How many Calories did I burn on average everyday?
+  	- What is average workout duration?
+  	- Whayt is my Average and Maximum Heart Rate like?
+  	- What is my Best Workoutscore?
+  	- What is my Worst Workoutscore?
+  	- What are my weekday and weekend workout like?
+  	- How does my workout score change based on different parameters
+  	- Month Action Filter
 
 ## Insights and Takeaways: (Post Completion)
 ### _Dashboard Highlights:_
