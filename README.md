@@ -120,44 +120,49 @@ This is what your fields in tableau will look like:
 
 ### _Approach:_
 - **Overall Health Score Calculation**: Aggregating key metrics to derive an overall health score.
-	- KPI's View - High Intensity Balance Ratio, Workout Efficiency Ratio, Wellness Hours, Overall Health Score
-	- Month Action Filter
-   	- Calendar View 
-   	- What does an Average day look like?
+	- KPI's View
+   		- High Intensity Balance Ratio - Decimal Number - The best way to show this would be like a KPI, it can be seen on Week, Month, and Quarter level.
+     		- Workout Efficiency Ratio - Decimal Number - Number of calories burnt per min in workout duration. KPI view will be good.
+       		- Wellness Hours - Time (Hours - Duration) - This is available for eachday whether there is workout data or not. KPI view is the right choice.
+         	- Heart Rate Score - A Score - This is a Rating for the Resting Heart Rate. KPI view is the desired one, as there isn't much it heart rate.
+         	- Overall Health Score - A Northstar Metric to check the Health Score it can be seen on Week, Month, and Quarter level. Prime KPI view .
+	- Month Action Filter - Action Based Filtering system on the Month Field from the Date Column. Squared selection of each month for the user to view.
+   	- Calendar View - This is a Custom Calendar view created to show the OHS or other metrics from the KPI View area.
+   	- What does an Average day look like? - This is informing the viewer what an average day is like for me.
   
 - **Sleep Insights**: Analyzing sleep duration, quality, and patterns.
-	- How much do I sleep on average everyday?
-   	- How much of that is light sleep?
-   	- How much of that is deep sleep?
-  	- What is my Best Sleep score?
-  	- What is my Worst Sleep score?
-  	- Weekends vs Weekday: Total Sleep, Deep Sleep, Light Sleep on Weekends vs Weekdays
-   	- How does my sleep score vary over different days of the week?
-   	- Is there a correlation between the duration of deep sleep and the sleep score?
-   	- How does the average duration of total sleep change over the course of a month?
-   	- Month Action Filter
+	- How much do I sleep on average everyday? - Card of number of minutes and hours I sleep everyday.
+   	- How much of that is light sleep? - Card view of light sleep in hours
+   	- How much of that is deep sleep? - Card view of deep sleep in hours
+  	- What is my Best Sleep score? - Card view of best sleep score
+  	- What is my Worst Sleep score? - Card view of worst sleep score 
+  	- Weekends vs Weekday? -  Total Sleep, Deep Sleep, Light Sleep on Weekends vs Weekdays 
+   	- How does my sleep score vary over different days of the week? - Sleep score over the weekdays in a line chart.
+   	- Is there a correlation between the duration of deep sleep and the sleep score? - 2 Scatter plot for correlation between deep sleep and sleep score.
+   	- How does the average duration of total sleep change over the course of a month? - Line Chart view of total sleep over course of a month. Month Filter!
+  	- Month Action Filter - Action Based Filtering system on the Month Field from the Date Column. Squared selection of each month for the user to view.
 
 - **Steps Tracker**: Monitoring daily step count and streaks.
-	- How much do I walk on average everyday?
-  	- How many kilometer's is that?
-  	- How much time do I spent walking?
-  	- What does that time look like in hours?
-  	- What amount of calories do I burn everyday?
-  	- What is my highest steps?
-  	- What is my lowest steps?
-  	- How long was my biggest streak of hitting 12K steps?
-  	- On average, what day of the week was my step score the best?
-  	- Month Action Filter
+	- How much do I walk on average everyday? - Card view of my average daily steps.
+  	- How many kilometer's is that? - Card view of kilometer's walked everyday.
+  	- How much time do I spent walking? - Card view of minutes spent walking a day.
+  	- What does that time look like in hours? - Card view of hours spent walking a day.
+  	- What amount of calories do I burn everyday? - Card view of the number of calories burned from walking in a day.
+  	- What is my highest steps? - Card view of my highest steps in a day.
+  	- What is my lowest steps? - Card view of my lowest steps in a day.
+  	- How long was my biggest streak of hitting 12K steps? - Card view of Streak.
+  	- On average, what day of the week was my step score the best? - Line Chart view of step score over course of a week.
+  	- Month Action Filter - Action Based Filtering system on the Month Field from the Date Column. Squared selection of each month for the user to view.
 
 - **Workout Analysis**: Assessing workout intensity, duration, and calorie burn.
-  	- How many Calories did I burn on average everyday?
-  	- What is average workout duration?
-  	- Whayt is my Average and Maximum Heart Rate like?
-  	- What is my Best Workoutscore?
-  	- What is my Worst Workoutscore?
-  	- What are my weekday and weekend workout like?
-  	- How does my workout score change based on different parameters
-  	- Month Action Filter
+  	- How many Calories did I burn on average everyday? - Card view of the number of Kcals burned.
+  	- What is average workout duration? - Card view of the average workout duration in minutes.
+  	- What is my Average and Maximum Heart Rate like? - Card view of my average and maximum heart rate during workout.
+  	- What is my Best Workoutscore? - Card view of best workout score.
+  	- What is my Worst Workoutscore? - Card view of worst workout score.
+  	- What are my weekday and weekend workout like? - Bar Chart comparing the weekday and weekend workout based.
+  	- How does my workout score change based on different parameters - Scatter plot of Workout Score vs other workout parameter.
+  	- Month Action Filter - Action Based Filtering system on the Month Field from the Date Column. Squared selection of each month for the user to view.
 
 ## Insights and Takeaways: (Post Completion)
 ### _Dashboard Highlights:_
