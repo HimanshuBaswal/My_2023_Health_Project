@@ -87,95 +87,128 @@ This is what your fields in tableau will look like:
 ### _Key Metrics:_
 - **Overall Health Score**: Comprising metrics like Intensity Balance Ratio, Workout Efficiency, and Wellness Hours.
 	- High Intensity Balance Ratio - Ratio of time spent in Zone 2 and above heart rate zones during workout. Zones like Intensive, Aerobic, Anaerobic, VO2 MAX Zone.
-	```sh
-	([Intensive Duration (Mins)] + [Aerobic Duration (Mins)] + [Anaerobic Duration (Mins)] + [VO2 Max Duration (Mins)])/[Workout Duration (mins)]
-	``` 
- 	- Workout Efficiency Ratio - Calories burnt per minute i.e., [Calories/Workout Duration (mins)].
-	```sh
- 	([Calories(Workout)]/[Workout Duration (mins)])
-	```
-	- Wellness Hours - Total time spent in wellness activities like Sleeping, Working out, Walking.
-    	```sh
-     	[Total Sleep (duration)] + [Duration (Mins)] + [Workout Duration (mins)])/60
+      	```sh
+     	High Intensity Balance Ratio = ([Intensive Duration (Mins)] + [Aerobic Duration (Mins)] + [Anaerobic Duration (Mins)] + [VO2 Max Duration (Mins)])/[Workout Duration (mins)]
      	```
- 	- Overall Health Score - This is like the northstar metric for this project. It is basically a weight score formula that utilizes Step Score, Sleep Score, Heart Rate Score, and Workout Score.
-  	```sh
-     	((ZN([Step Score)*0.2) + (ZN([Sleep Score)*0.35) + (ZN([Heart Rate Score)*0.15) + (ZN([Workout Score)*0.3))/1
-   	```
-  	- Avg Day Text - A Text based calculated field to show what an average day looks like. ![10](https://github.com/HimanshuBaswal/My_Health_Project/assets/74957804/7f3779ef-acd4-45c0-8a28-900a36a59f06)
-  	```sh
-     	((ZN([Step Score)*0.2)
-   	```
-   	- Month Name - Deriving month name from Date. ![9](https://github.com/HimanshuBaswal/My_Health_Project/assets/74957804/76d0f66b-4c6a-4990-ba6c-d36266f0d7df)
-  	```sh
-     	((ZN([Step Score)*0.2)
-   	```
+ 
+	- Workout Efficiency Ratio - Calories burnt per minute i.e., [Calories/Workout Duration (mins)].
+     	```sh
+     	Workout Efficiency Ratio = ([Calories(Workout)]/[Workout Duration (mins)])
+     	```
+ 
+	- Wellness Hours - Total time spent in wellness activities like Sleeping, Working out, Walking.
+     	```sh
+     	Wellness Hours = [Total Sleep (duration)] + [Duration (Mins)] + [Workout Duration (mins)])/60
+     	```
+      
+	- Overall Health Score - This is like the northstar metric for this project. It is basically a weight score formula that utilizes Step Score, Sleep Score, Heart Rate Score, and Workout Score.
+     	```sh
+     	Overall Health Score = ((ZN([Step Score)*0.2) + (ZN([Sleep Score)*0.35) + (ZN([Heart Rate Score)*0.15) + (ZN([Workout Score)*0.3))/1
+     	```     
+   
+	- Month Name - Deriving month name from Date.
+     	```sh
+     	Month = DATENAME('Month',[Date])
+     	```
+   
    	- Weekday - Group of days counted as weekdays and others are basically weekend.
-  	```sh
-     	((ZN([Step Score)*0.2)
-   	```
+     	```sh
+     	Weekday = DATENAME('weekday',[Date])
+     	```
+   
    	- 1steps average - A FIXED month view of the Total Steps with ROUNDED value.
-  	```sh
-     	((ZN([Step Score)*0.2)
-   	```
+        ```sh
+     	1steps average = ROUND({ FIXED DATETRUNC("month", [Date]): AVG([Total Steps]) },0)
+     	```
+   
 	- 2hours average - A FIXED month view of the Total Sleep time with ROUNDED value.
-  	```sh
-     	((ZN([Step Score)*0.2)
-   	```
+     	```sh
+     	2hours average = ROUND({ FIXED DATETRUNC("month", [Date]): AVG([Total Sleep (duration)]) },0)
+     	```   
+   
    	- 3calories average - A FIXED month view of the Total Calories Burned with ROUNDED value.
-  	```sh
-     	((ZN([Step Score)*0.2)
-   	```
-	- Total Calories Burned - Summation of Calories burnt from Walking and from Workout. ![4](https://github.com/HimanshuBaswal/My_Health_Project/assets/74957804/a8e372d1-4735-419a-a8c5-a86e17dd9921)
-  	```sh
-     	((ZN([Step Score)*0.2)
-   	```
+     	```sh
+     	3calories average = ROUND({ FIXED DATETRUNC("month", [Date]): AVG([Calories]) },0)
+     	```
+     
+	- Total Calories Burned - Summation of Calories burnt from Walking and from Workout.
+     	```sh
+     	Total Calories Burned = ZN([Calories])+ZN([Calories(Workout)])
+     	```   
+
+  	- Avg Day Text - A Text based calculated field to show what an average day looks like.
+     	```sh
+     	Avg Day Text = "On average in " + STR([Month Name]) + " I walked " + STR([1Steps Average]) + " steps, slept " + STR([2Hours Average]) + " hours, and burnt " + STR([3Calories Average]) + " calories per day"
+     	```      
 	
 - **Heart Rate Metrics**: Evaluating heart rate trends and resting heart rate levels.
-	- Heart Rate Score - This score is based on the resting heart rate. ![Heart Rate Score](https://github.com/HimanshuBaswal/My_Health_Project/assets/74957804/0c3e8345-645a-4516-87f0-19887c5314e0)
-   	```sh
-     	((ZN([Step Score)*0.2)
-   	```
+	- Heart Rate Score - This score is based on the resting heart rate.
+     	```sh
+     	Heart Rate Score = IF [Resting Heart Rate] >= 49 AND [Resting Heart Rate] <= 55 THEN 100
+			   	ELSEIF [Resting Heart Rate] >= 56 AND [Resting Heart Rate] <= 61 THEN 90
+			  	ELSEIF [Resting Heart Rate] >= 62 AND [Resting Heart Rate] <= 65 THEN 80
+			  	ELSEIF [Resting Heart Rate] >= 66 AND [Resting Heart Rate] <= 69 THEN 70
+				ELSEIF [Resting Heart Rate] >= 70 AND [Resting Heart Rate] <= 73 THEN 60
+			   	ELSEIF [Resting Heart Rate] >= 74 AND [Resting Heart Rate] <= 81 THEN 50
+			 	ELSEIF [Resting Heart Rate] >= 82 THEN 40
+			        END
+     	```
 
 - **Sleep Quality Metrics**: Including Weekend vs. Weekday sleep patterns and Sleep Score analysis.
 	- Sleep Score - An Inbuild sleep score from the MI band 3 App.
-  	- Total Hours Slept - Cumulative time spent sleeping (deep sleep + light sleep). It gives us overall sleeping time in Hours.  ![1](https://github.com/HimanshuBaswal/My_Health_Project/assets/74957804/506ea591-eba0-4ac2-a8c1-79af4668c03f)
-  	```sh
-     	((ZN([Step Score)*0.2)
-   	```
+
+  	- Total Hours Slept - Cumulative time spent sleeping (deep sleep + light sleep). It gives us overall sleeping time in Hours.
+     	```sh
+     	Total Hours Slept = [Total Sleep (duration)]/60
+     	```
 
 - **Step Tracking Metrics**: Incorporating Streak and Step Score for monitoring progress.
-	- Hours Walked - Duration of walking in hours. ![1](https://github.com/HimanshuBaswal/My_Health_Project/assets/74957804/debcc79c-014d-4238-bfbe-ec412ffff1f4)
-   	```sh
-     	((ZN([Step Score)*0.2)
-   	```
-  	- Step Score - A Metric devised by normalizing the daily step count with normalization function. (X - Xmin)/(Xmax - Xmin)![2](https://github.com/HimanshuBaswal/My_Health_Project/assets/74957804/50e359ef-8dfe-4fd0-b15f-197271baa372)
-  	```sh
-     	((ZN([Step Score)*0.2)
-   	```
+	- Hours Walked - Duration of walking in hours.
+     	```sh
+     	Hours Walked = [Duration (Mins)]/60
+     	```
+    
+  	- Step Score - A Metric devised by normalizing the daily step count with normalization function. (X - Xmin)/(Xmax - Xmin)
+     	```sh
+     	Step Score = (([Total Steps] - 2997)/(20475-2997))
+     	```
+   
   	- Streak - Potential new visual 
 	
 - **Workout Performance Metrics**: Covering
-  	- Workout Score - A Score derived from utilizing normalized workout score in percentage. ![4](https://github.com/HimanshuBaswal/My_Health_Project/assets/74957804/4b797e18-b78e-4519-a6c3-47d3e78d0f8b)
-  	```sh
-     	((ZN([Step Score)*0.2)
-   	```
-  	- Workout Norm - Normalized formula utilizing heart rate zone levels in minutes and assigning them with weighted score. ![3](https://github.com/HimanshuBaswal/My_Health_Project/assets/74957804/ce4f0ada-879e-4209-8d4a-d79af0356dd4)
-  	```sh
-     	((ZN([Step Score)*0.2)
-   	```
-	- High Intensity Balance Ratio - Ratio of time spent in high heart rate zone in workout.![1](https://github.com/HimanshuBaswal/My_Health_Project/assets/74957804/db6ac68a-e5eb-4207-ab46-dc9188ab3fe0)
-  	```sh
-     	((ZN([Step Score)*0.2)
-   	```
- 	- *Workout Metric Parameter* - This parameter will serve as a dynamic axis selection parameter in the visual, where I see how different parameters affect my workout score.![5](https://github.com/HimanshuBaswal/My_Health_Project/assets/74957804/7005f16e-7b0a-4bd5-8ae6-6091fc7f9d91)
-  	```sh
-     	((ZN([Step Score)*0.2)
-   	```
-  	- Workout Metric - This calculated field utilizes the *Workout Metric Parameter* to select between different fields.![6](https://github.com/HimanshuBaswal/My_Health_Project/assets/74957804/9a6129dd-7dd7-41e0-9edd-fc527097f1fa)
-  	```sh
-     	((ZN([Step Score)*0.2)
-   	```
+  	- Workout Score - A Score derived from utilizing normalized workout score in percentage.
+     	```sh
+     	Workout Score = ([Workout Norm]/2447.76)*100
+     	```
+  
+  	- Workout Norm - Normalized formula utilizing heart rate zone levels in minutes and assigning them with weighted score.
+     	```sh
+     	Workout Norm = (([Relaxed Duration (Mins)]*5) + ([Light Duration (Mins)]*10) + ([Intensive Duration (Mins)]*15) + ([Aerobic Duration (Mins)]*20) + ([Anaerobic Duration (Mins)]*23) + ([VO2 Max Duration (Mins)]*27))
+     	```
+   
+	- High Intensity Balance Ratio - Ratio of time spent in high heart rate zone in workout.
+     	```sh
+     	High Intensity Balance Ratio = ([Intensive Duration (Mins)]+[Aerobic Duration (Mins)]+[Anaerobic Duration (Mins)]+[VO2 Max Duration (Mins)])/[Workout Duration (mins)]
+     	```
+   
+ 	- *Workout Metric Parameter* - This parameter will serve as a dynamic axis selection parameter in the visual, where I see how different parameters affect my workout score.![5]
+     	```sh
+     	Name = Workout Metric
+        Data type = String
+        Current Value = Workout Duration
+     	```
+   
+  	- Workout Metric - This calculated field utilizes the *Workout Metric Parameter* to select between different fields.
+     	```sh
+     	Workout Metric = CASE [Parameters].[Workout Metric]
+  	   		WHEN 'Workout Duration' THEN [Workout Duration (mins)]
+  	   		WHEN 'Max Heart Rate' THEN [Max Heart Rate]
+  	   		WHEN 'Avg Heart Rate' THEN [Avg Heart Rate]
+  	   		WHEN 'Calories (Workout)' THEN [Calories (Workout)]
+  	   		WHEN 'Intensity Balance Ratio' THEN [High Intensity Balance Ratio]
+  	   		WHEN 'Workout Efficiency Ratio' THEN [Workout Efficiency Ratio]
+  	   		END
+     	```
 
 ### _Approach:_
 - **Overall Health Score Calculation**: Aggregating key metrics to derive an overall health score.
