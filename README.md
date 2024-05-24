@@ -222,17 +222,6 @@ This is what your fields in tableau will look like:
    	- Calendar View - This is a Custom Calendar view created to show the OHS or other metrics from the KPI View area in an heat map. Circle based on size of the OHS value to be shown with valued colours.
    	- What does an Average day look like? - This is informing the viewer what an average day is like for me in terms of steps, hours, and calories. (A statement will be the standard way to show it.)
 
-- **Overall Health Score Calculation**: Aggregating key metrics to derive an overall health score.
-	- KPI's View
-   		- High Intensity Balance Ratio - Decimal Number - The best way to show this would be like a KPI, it can be seen on Week, Month, and Quarter level.
-     		- Workout Efficiency Ratio - Decimal Number - Number of calories burnt per min in workout duration. KPI view will be good.
-       		- Wellness Hours - Time (Hours - Duration) - This is available for eachday whether there is workout data or not. KPI view is the right choice.
-         	- Heart Rate Score - A Score - This is a Rating for the Resting Heart Rate. KPI view is the desired one, as there isn't much it heart rate.
-         	- Overall Health Score - A Northstar Metric to check the Health Score it can be seen on Week, Month, and Quarter level. Prime KPI view .
-	- Month Action Filter - Action Based Filtering system on the Month Field from the Date Column. Squared selection of each month for the user to view.
-   	- Calendar View - This is a Custom Calendar view created to show the OHS or other metrics from the KPI View area.
-   	- What does an Average day look like? - This is informing the viewer what an average day is like for me.
-
 - **Sleep Insights**: Analyzing sleep duration, quality, and patterns.
 	- How much do I sleep on average everyday? - Card of number of minutes and hours I sleep everyday.
    	- How much of that is light sleep? - Card view of light sleep in hours
