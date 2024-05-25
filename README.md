@@ -48,26 +48,26 @@ The final data is a **INNER JOIN** of Heart Rate, Sleep, Steps, and Workout data
 A look at all the Fields in the data:
 | Field Name | Current Type | New Type | Classify |
 | ------ | ------ | ------ | ------ |
-|Date (Steps)	| Date 	| Date | Dimension |
-|Total Steps	|Whole Number	|Whole Number	|Measure |
-|Distance (KM)	|Whole Number	|Whole Number |Measure |
-|Duration (Mins)	|Whole Number	|Whole Number	|Measure|
-|Duration (HH:MM:SS)	|DD-MM-YYYY HH:MM:SS	|DD-MM-YYYY HH:MM:SS	|Dimension|
-|Calories	|Whole Number	|Whole Number	|Measure|
-|Fat Burned	|Whole Number	|Whole Number	|Measure|
-|Date (Sleep)	|Date 	|Date 	|Dimension|
-|Light Sleep (Minutes)	|Whole Number	|Whole Number	|Measure|
-|Deep Sleep (Minutes)	|Whole Number	|Whole Number	|Measure|
-|Total Sleep (duration)	|Whole Number	|Whole Number	|Measure|
-|Total Sleep (Time)	|DD-MM-YYYY HH:MM:SS	|DD-MM-YYYY HH:MM:SS	|Dimension|
-|Sleep Score	|Whole Number|	Whole Number|	Measure|
-|Date (HeartRate)	|Date 	|Date 	|Dimension|
-|Average |Whole Number	|Whole Number	|Measure|
-|Maximum |Whole Number	|Whole Number	|Measure|
-|Minimum |Whole Number	|Whole Number	|Measure|
-|Resting Heart Rate	|Whole Number	|Whole Number	|Measure|
-|Date	|Date 	|Date 	|Dimension|
-|Start_Time	|Text	|Text	|Dimension|
+|Date (Steps)	| Date 	|- | Dimension |
+|Total Steps	|Whole Number	|- |Measure |
+|Distance (KM)	|Whole Number	|- |Measure |
+|Duration (Mins)	|Whole Number	|- |Measure|
+|Duration (HH:MM:SS)	|DD-MM-YYYY HH:MM:SS	|- |Dimension|
+|Calories	|Whole Number	|- |Measure|
+|Fat Burned	|Whole Number	|- |Measure|
+|Date (Sleep)	|Date 	|- |Dimension|
+|Light Sleep (Minutes)	|Whole Number	|- |Measure|
+|Deep Sleep (Minutes)	|Whole Number	|- |Measure|
+|Total Sleep (duration)	|Whole Number	|- |Measure|
+|Total Sleep (Time)	|DD-MM-YYYY HH:MM:SS	|- |Dimension|
+|Sleep Score	|Whole Number|- |Measure|
+|Date (HeartRate)	|Date 	|- |Dimension|
+|Average |Whole Number	|-	|Measure|
+|Maximum |Whole Number	|-	|Measure|
+|Minimum |Whole Number	|-	|Measure|
+|Resting Heart Rate	|Whole Number	|-	|Measure|
+|Date	|Date 	|- 	|Dimension|
+|Start_Time	|Text	|-	|Dimension|
 |Workout_Duration (mins)	|Text	|**Whole Number**|Measure|
 |Avg Heart Rate		|Text	|**Whole Number**|Measure|
 |Max Heart Rate		|Text	|**Whole Number**|Measure|
@@ -81,7 +81,8 @@ A look at all the Fields in the data:
 
 This is what your fields in tableau will look like:
 
-![2](https://github.com/HimanshuBaswal/My_Health_Project/assets/74957804/6107b550-ae0e-48e6-8681-978f7f45dbbc)
+![2](https://github.com/HimanshuBaswal/My_Health_Project/assets/74957804/6107b550-ae0e-48e6-8681-978f7f45dbbc) 
+
 ![3](https://github.com/HimanshuBaswal/My_Health_Project/assets/74957804/7def421d-afee-43e4-b30f-9f4589209cfc)
 
 ### _Key Metrics:_
