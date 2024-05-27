@@ -82,7 +82,6 @@ A look at all the Fields in the data:
 This is what your fields in tableau will look like:
 
 ![2](https://github.com/HimanshuBaswal/My_Health_Project/assets/74957804/6107b550-ae0e-48e6-8681-978f7f45dbbc) 
-
 ![3](https://github.com/HimanshuBaswal/My_Health_Project/assets/74957804/7def421d-afee-43e4-b30f-9f4589209cfc)
 
 ### _Key Metrics:_
@@ -154,6 +153,8 @@ This is what your fields in tableau will look like:
 			 	ELSEIF [Resting Heart Rate] >= 82 THEN 40
 			        END
      	```
+      ![Resting-Heart-Rate-RHR-chart-1-946x1024](https://github.com/HimanshuBaswal/My_Health_Project/assets/74957804/5475717b-c9d5-48da-9c49-d1a11481904e)
+
 
 - **Sleep Quality Metrics**: Including Weekend vs. Weekday sleep patterns and Sleep Score analysis.
 	- Sleep Score - An Inbuild sleep score from the MI band 3 App.
