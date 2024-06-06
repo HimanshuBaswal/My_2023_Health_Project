@@ -362,61 +362,61 @@ This is what your fields in tableau will look like:
 
 **Workout Analysis**
 
-1.  **Average Calories Burned****:**
+1.  **Average Calories Burned:**
 	-   **February**: On average, I burned 671 calories.
 	-   **June**: Average calorie burn was 597 calories.
 
-2.  **Average Heart Rate****:**
+2.  **Average Heart Rate:**
 	-   **June**: Peaked at an average of 121 bpm.
 
-3.  **Maximum Heart Rate****:**
+3.  **Maximum Heart Rate:**
 	-   **May**: Peaked at an average of 181 bpm.
 
-4.  **Average Workout Duration****:**
+4.  **Average Workout Duration:**
 	-   **January**: Average workout duration was 114 minutes.
 
-5.  **Best Workout Score****:**
+5.  **Best Workout Score:**
 	-   **May** **21st**: Achieved a score of 99.98.
 
-6.  **Worst Workout Score****:**
+6.  **Worst Workout Score:**
 	-   **June** **19th**: Score dropped to 30.16.
 
 **Workout Score vs Parameters:**
 
-1.  **Workout Duration vs. Weekday/Weekend****:**
+1.  **Workout Duration vs. Weekday/Weekend:**
 	-   Weekends: Higher workout duration compared to weekdays.
 
-2.  **Workout Duration vs. Workout Score****:**
+2.  **Workout Duration vs. Workout Score:**
 	-   Correlation: Positive correlation between workout duration and average workout score.
 
-3.  **Max Heart Rate vs. Weekday/Weekend****:**
+3.  **Max Heart Rate vs. Weekday/Weekend:**
 	-   Observation: Similar maximum heart rate on weekends and weekdays.
 
-4.  **Max Heart Rate vs. Workout Score****:**
+4.  **Max Heart Rate vs. Workout Score:**
 	-   Correlation: No significant correlation between workout score and maximum heart rate.
 
-5.  **Average Heart Rate vs. Weekday/Weekend****:**
+5.  **Average Heart Rate vs. Weekday/Weekend:**
 	-   Weekdays: Slightly higher average heart rate compared to weekends.
 
-6.  **Average Heart Rate vs. Workout Score****:**
+6.  **Average Heart Rate vs. Workout Score:**
 	-   Correlation: No significant correlation between workout score and average heart rate.
 
-7.  **Calories Burned (Workout) vs. Weekday/Weekend****:**
+7.  **Calories Burned (Workout) vs. Weekday/Weekend:**
 	-   Weekends: Burned 20% more calories compared to weekdays.
 
-8.  **Calories Burned (Workout) vs. Workout Score****:**
+8.  **Calories Burned (Workout) vs. Workout Score:**
 	-   Correlation: Positive correlation between calories burned and workout score.
 
-9.  **High Intensity Balance (HIB) Ratio vs. Weekday/Weekend****:**
+9.  **High Intensity Balance (HIB) Ratio vs. Weekday/Weekend:**
 	-   Weekdays: Spent 46% of workout duration in high-intensity compared to 39% on weekends.
 
-10.  **HIB Ratio vs. Workout Score****:**
+10.  **HIB Ratio vs. Workout Score:**
 	-   Correlation: Higher HIB ratio is associated with a better workout score.
 
-11.  **Workout Efficiency vs. Weekday/Weekend****:**
+11.  **Workout Efficiency vs. Weekday/Weekend:**
 	-   Weekdays: Average workout efficiency of 5.8, slightly higher than weekends (5.44).
 
-12.  **Workout Efficiency vs. Workout Score****:**
+12.  **Workout Efficiency vs. Workout Score:**
 	-   Correlation: Positive correlation between workout efficiency and workout score.
 
 ## Conclusion:
