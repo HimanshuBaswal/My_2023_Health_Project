@@ -258,14 +258,169 @@ This is what your fields in tableau will look like:
   	- How does my workout score change based on different parameters - Scatter plot of Workout Score vs other workout parameter.
   	- Month Action Filter - Action Based Filtering system on the Month Field from the Date Column. Squared selection of each month for the user to view.
 
-## Insights and Takeaways: (Post Completion)
-### _Dashboard Highlights:_
-- **Overall Health Score Trends**: Tracking improvements or declines in overall health metrics.
-- **Steps and Sleep Patterns**: Identifying correlations between step count and sleep quality.
-- **Workout Intensity Analysis**: Assessing the impact of workout duration and intensity on overall health.
+## Insights:
+
+### MAIN DASHBOARD
+- **Overall Health Score (OHS)**
+	-   **January Peak**: The average Overall Health Score (OHS) peaked at 62.2 in January. This is reflected in the calendar view, where the majority of days are represented by dark blue squares, indicating higher scores.
+	-   **March Decline**: OHS saw a significant drop in March, averaging 46.5. This is corroborated by a more varied color representation in the calendar view, showing less consistency in high scores.
+	-   **May Peak Day**: The highest OHS was recorded on May 21st, with a score of 83.5.
+
+- **Workout Efficiency**
+	-   **Lowest in January**: Workout efficiency was at its lowest in January, with an efficiency score of 5.4.
+	-   **Highest in June**: The highest workout efficiency was observed in June, with a score of 6.2.
+
+- **Heart Rate Score**
+	-   **March Low**: The heart rate score was at its lowest in March, with a score of 66.9.
+	-   **June High**: The highest heart rate score was recorded in June, reaching 80.4.
+
+- **Intensity Balance Ratio (IB Ratio)**
+	-   **February Minimum**: The IB Ratio reached its lowest point in February, with a value of 36.
+	-   **April Maximum**: The highest IB Ratio was recorded in April, at 50.
+
+- **Wellness Hours**
+	-   **February Peak**: The maximum wellness hours were recorded in February, with a total of 13.5 hours.
+	-   **March Low**: The lowest wellness hours were in March, totaling 10.4 hours.
+
+- **Calendar View**
+	-   **January Consistency**: January shows the most consistent OHS, with dark blue squares indicating stable, high scores throughout the month.
+	-   **March Variability**: March demonstrates the least consistency, with an average OHS in the 40s and several outliers, indicating fluctuating health scores.
+
+### STEPS DASHBOARD
+**Steps**
+1.  **Lowest Step Count**: The lowest step count recorded was in June, with only 2,997 steps.
+2.  **Highest Step Count**: The highest step count was achieved in February, with a total of 20,475 steps.
+3.  **Consistent Achievement in January**: In January, the target step count of 12,000 steps was met every day for all 31 days.
+4.  **January Averages**:
+	-   **Highest Average Step Count**: January saw the highest average step count, reaching 16,133 steps per day.
+	-   **Highest Average Distance Walked**: The average distance walked in January was 10.97 kilometers per day.
+	-   **Average Walking Time**: On average, 187.5 minutes were spent walking each day in January, equivalent to approximately 3.13 hours.
+	-   **Calories Burnt**: An average of 414.1 calories was burnt daily while walking in January.
+6.  **Step Count Variability**: January had an average difference of 3,739 steps between the highest and lowest daily counts, indicating a more consistent average step count compared to other months.
+7.  **Consistent Step Score**: The step score in January consistently ranged between 74 and 78.
+
+### SLEEP DASHBOARD
+**Sleep Overall**
+1.  **Average Daily Sleep**: Consistent average of 7.2 hours per day over the 6 months.
+2.  **Deep Sleep**:
+	-   **Low Deep Sleep in Q1**: January (0.83 hours), February (1.66 hours), and March (1.73 hours), leading to a Q1 average of 1.4 hours.
+	-   **Higher Deep Sleep in Q2**: Average of 2.05 hours.
+4.  **Light Sleep**: Consistently around 5.2 hours per day over the 6 months.
+5.  **Sleep Score**:
+	-   **Best**: 98 in June.
+	-   **Worst**: 40 in January.
+7.  **Total Sleep**:
+	-   **Consistent Average**: 7.2 hours across the months.
+	-   **Lowest**: 3.9 hours on January 8th.
+	-   **Highest**: 10.9 hours on March 18th.
+
+**Sleep Score Analysis**
+1.  **Weekdays vs. Weekends**:
+	-   **January, May, June**: Weekday sleep scores were at least 4 points higher than weekend scores.
+	-   **February, March, April**: Weekday and weekend scores were almost similar, with weekdays slightly higher.
+
+2.  **Average Sleep Score by Day of the Week**:
+	-   **January**: Worst sleep scores for all days.
+	-   **April**: Best sleep scores for all days.
+	-   **Thursday**: Best day overall.
+	-   **Sunday**: Worst day overall.
+
+**Deep Sleep Analysis**
+1.  **Weekdays vs. Weekends**:
+	-   **Higher on Weekends**: February, March, April, June.
+	-   **Higher on Weekdays**: January, May.
+
+2.  **Deep Sleep by Day of the Week**:
+	-   **Saturday**: Highest overall deep sleep.
+	-   **Sunday**: Fluctuates the most - low in January, February, May, and June; high in March and April.
+	-   **Monday**: Consistently low.
+
+**Light Sleep Analysis**
+1.  **Weekdays vs. Weekends**:
+	-   **Higher on Weekends**: February, March, April, May, June.
+	-   **Equal on Weekdays and Weekends**: January.
+
+2.  **Light Sleep by Day of the Week**:
+	-   **Sunday and Saturday**: Highest sleep scores.
+	-   **January**: Highest overall average light sleep (395 mins).
+	-   **April**: Least light sleep overall average (312 mins).
+	-   **Monday**: Least light sleep overall average (304 mins).
+	-   **Saturday**: Highest light sleep (382 mins), followed by Sunday (360 mins) - only days with 6+ hours of light sleep on average.
+
+**Total Sleep Analysis**
+1.  **Weekdays vs. Weekends**:
+	-   **Higher on Weekends**: February, March, April, May, June.
+	-   **Equal on Weekdays and Weekends**: January.
+
+2.  **Total Sleep by Day of the Week**:
+	-   **Highest Average Total Sleep Time**: January, April, June.
+	-   **Lowest Average Total Sleep Time**: May, March.
+	-   **Saturday in March**: Highest total sleep time (10.3 hours on average).
+	-   **Monday in March**: Lowest total sleep time (5.6 hours on average).
+	-   **Saturday**: Highest total sleep time overall (10.3 hours on average).
+	-   **Monday**: Lowest total sleep time overall (5.4 hours on average).
+
+**Workout Analysis**
+
+1.  **Average Calories Burned****:**
+	-   **February**: On average, I burned 671 calories.
+	-   **June**: Average calorie burn was 597 calories.
+
+2.  **Average Heart Rate****:**
+	-   **June**: Peaked at an average of 121 bpm.
+
+3.  **Maximum Heart Rate****:**
+	-   **May**: Peaked at an average of 181 bpm.
+
+4.  **Average Workout Duration****:**
+	-   **January**: Average workout duration was 114 minutes.
+
+5.  **Best Workout Score****:**
+	-   **May** **21st**: Achieved a score of 99.98.
+
+6.  **Worst Workout Score****:**
+	-   **June** **19th**: Score dropped to 30.16.
+
+**Workout Score vs Parameters:**
+
+1.  **Workout Duration vs. Weekday/Weekend****:**
+	-   Weekends: Higher workout duration compared to weekdays.
+
+2.  **Workout Duration vs. Workout Score****:**
+	-   Correlation: Positive correlation between workout duration and average workout score.
+
+3.  **Max Heart Rate vs. Weekday/Weekend****:**
+	-   Observation: Similar maximum heart rate on weekends and weekdays.
+
+4.  **Max Heart Rate vs. Workout Score****:**
+	-   Correlation: No significant correlation between workout score and maximum heart rate.
+
+5.  **Average Heart Rate vs. Weekday/Weekend****:**
+	-   Weekdays: Slightly higher average heart rate compared to weekends.
+
+6.  **Average Heart Rate vs. Workout Score****:**
+	-   Correlation: No significant correlation between workout score and average heart rate.
+
+7.  **Calories Burned (Workout) vs. Weekday/Weekend****:**
+	-   Weekends: Burned 20% more calories compared to weekdays.
+
+8.  **Calories Burned (Workout) vs. Workout Score****:**
+	-   Correlation: Positive correlation between calories burned and workout score.
+
+9.  **High Intensity Balance (HIB) Ratio vs. Weekday/Weekend****:**
+	-   Weekdays: Spent 46% of workout duration in high-intensity compared to 39% on weekends.
+
+10.  **HIB Ratio vs. Workout Score****:**
+	-   Correlation: Higher HIB ratio is associated with a better workout score.
+
+11.  **Workout Efficiency vs. Weekday/Weekend****:**
+	-   Weekdays: Average workout efficiency of 5.8, slightly higher than weekends (5.44).
+
+12.  **Workout Efficiency vs. Workout Score****:**
+	-   Correlation: Positive correlation between workout efficiency and workout score.
 
 ## Conclusion:
-Consideration of Scatter plot visualization showcasing Workout Duration vs. Parameters (Score, calories, Heart Rate levels) for deeper insights. Also, analyze variations in health metrics between weekends and weekdays.
+The project successfully harnessed personal health data to provide actionable insights. Regular monitoring and visualization of health metrics fostered a deeper understanding of personal well-being, encouraging healthier habits and informed lifestyle choices. The Insights gained gives me a deep understanding about what works when it comes to health, what kind of sleep is better for health, how to remain consistent with chasing a walking goal, and what kind of heart rate zone is good for optimal fat burning and longevity.
 
 
 [![N|Tableau](https://cdn.iconscout.com/icon/free/png-256/free-tableau-5376638-4489898.png?f=webp)](https://www.tableau.com/) [![N|Miro](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxw8FakALOwikyJ6z2eIoYp3Cf7EPKpGRT6L4Pv15oaQ&s)](https://miro.com/index/)
