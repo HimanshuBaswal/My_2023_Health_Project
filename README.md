@@ -410,14 +410,15 @@ This is what your fields in tableau will look like:
 9.  **High Intensity Balance (HIB) Ratio vs. Weekday/Weekend:**
 	-   Weekdays: Spent 46% of workout duration in high-intensity compared to 39% on weekends.
 
-10.  **HIB Ratio vs. Workout Score:**
-	-   Correlation: Higher HIB ratio is associated with a better workout score.
+10. **HIB Ratio vs. Workout Score:**
+    	-   Correlation: Higher HIB ratio is associated with a better workout score.
 
 11.  **Workout Efficiency vs. Weekday/Weekend:**
 	-   Weekdays: Average workout efficiency of 5.8, slightly higher than weekends (5.44).
 
 12.  **Workout Efficiency vs. Workout Score:**
 	-   Correlation: Positive correlation between workout efficiency and workout score.
+
 
 ## Conclusion:
 The project successfully harnessed personal health data to provide actionable insights. Regular monitoring and visualization of health metrics fostered a deeper understanding of personal well-being, encouraging healthier habits and informed lifestyle choices. The Insights gained gives me a deep understanding about what works when it comes to health, what kind of sleep is better for health, how to remain consistent with chasing a walking goal, and what kind of heart rate zone is good for optimal fat burning and longevity.
