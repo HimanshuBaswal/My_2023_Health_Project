@@ -23,6 +23,9 @@ The project utilizes personal health data logged daily, covering steps, sleep pa
 | Miro | Used for dashboard layout planning, information architecture, metric selection, documentation & Notes. |
 | Excel | Utilized for data management and preliminary analysis | 
 
+#### _Link:_
+[Link to the Tableau Data Viz](https://public.tableau.com/views/My2023HealthLogsStory/OHS?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link)
+
 ## About the Dashboards :
 The project comprises of four main dashboards:
 - **Sleep Insights**: Focuses on sleep patterns and quality metrics.
@@ -423,5 +426,6 @@ This is what your fields in tableau will look like:
 ## Conclusion:
 The project successfully harnessed personal health data to provide actionable insights. Regular monitoring and visualization of health metrics fostered a deeper understanding of personal well-being, encouraging healthier habits and informed lifestyle choices. The Insights gained gives me a deep understanding about what works when it comes to health, what kind of sleep is better for health, how to remain consistent with chasing a walking goal, and what kind of heart rate zone is good for optimal fat burning and longevity.
 
+[Link to the Tableau Data Viz](https://public.tableau.com/views/My2023HealthLogsStory/OHS?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link)
 
 [![N|Tableau](https://cdn.iconscout.com/icon/free/png-256/free-tableau-5376638-4489898.png?f=webp)](https://www.tableau.com/) [![N|Miro](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxw8FakALOwikyJ6z2eIoYp3Cf7EPKpGRT6L4Pv15oaQ&s)](https://miro.com/index/)
